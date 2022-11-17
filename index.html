@@ -1,0 +1,128 @@
+<html>
+<head>
+<title>Tempelates</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.header {
+  background-color: black;
+  color: white;
+  padding: 15px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  width: 100%;
+  float: left;
+  padding: 15px;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: green;
+  color: white;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+.img {
+  width:42px;
+  height:42px;
+}
+
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+.col-3 {width: 25%;}
+.col-9 {width: 75%;}
+
+}
+
+/* For mobile phones: 
+  [class*="col-"] {
+    width: 100%;
+  }
+*/
+
+
+</style>
+
+<body>
+
+<header class="header">
+  <h1>Template Design</h1>
+</header>
+
+<main class="row">
+  <nav class="col-3 menu">
+
+    <ul>
+      <li><a href="https://www.w3schools.com/html/default.asp" target="_blank" style="color:white;">
+        <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_640.png" alt="HTML" class="img">HTML</a></li>
+
+      <li><a href="https://www.w3schools.com/css/default.asp" target="_blank" style="color:white;">
+        <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_960_720.png" alt="HTML" class="img">CSS</a></li>
+
+      <li><a href="https://www.w3schools.com/js/default.asp" target="_blank" style="color:white;">
+        <img src="https://www.citypng.com/public/uploads/small/11662226392uom4gsi9ddb1c81ipfx2u4imargvwq7uskhdui1pj4f6xufjz0jkfzqzduhjuifts0dzcnykgszw6isfutq2nlwb51ef4gm0dt8d.png" alt="HTML" class="img">JavaScript</a></li>
+    </ul>
+  </nav>
+
+  <section class="col-9" class="content">
+    <h1>Responsive Web Design</h1>
+    <h2>Mobile First</h2>
+    <h3>Breakpoint</h3>
+    <p>Mobile First means designing for mobile before designing for desktop or any other device (This will make the page display faster on smaller devices).</p>
+  </section>
+</main>
+
+  <footer class="footer">
+
+
+<h2>Program:</h2>
+<details>
+  <summary><a href="http://msimbo.herokuapp.com/" target="_blank">Code Adademy at ULEM</a></summary>
+<p>A 20 weeks of 120 hours coding technology training program and the professional development for ULEM’s MSIMBO program.</p>
+</details>
+
+<h2>Instructor:</h2>
+  <p>Othneil Uter</p>
+
+<h2>About Me:</h2>
+
+<h3>Name:</h3>
+<p>Amirhossein Olyaei</p>
+<a href="https://www.linkedin.com/in/amirhossein-olyaei-4785403a/" target="_blank">LinkedIn</a>
+
+  </footer>
+
+
+
+
+</body>
+</html>
